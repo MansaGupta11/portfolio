@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mansa Gupta - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family:'poppins', sans-serif;
+      }
+      body {
+        background-color: rgb(50, 50, 255);
+        color: white;
+      }
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(3, 3, 185);
+
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin: 0 23px;
+
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover{
+        color: rgb(213, 180, 243);
+        font-size: 1.05rem;
+
+      }
+      main hr {
+        border: 0;
+        background: rgb(60, 0, 255);
+        margin: 40px 80px;
+        height: 2px;
+      }
+
+      .left{
+        font-size: 1.5rem ;
+      }
+      .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 70px 0;
+      }
+      .firstSection > div{
+        width: 30%;
+
+      }
+      .leftSection{
+        font-size: 3rem;
+        margin: 70px 0;
+      }
+      .leftSection .buttons{
+        padding: 20px;
+      }
+      .leftSection .btn{
+        padding: 12px;
+        background: rgb(30, 0, 255);
+        color: white;
+        border: 2px solid white;
+        font-size: 20px;
+        cursor: pointer;
+        
+
+      }
+
+      .rightSection img{
+        width: 80%;
+        margin: 70px;
+      }
+      .purple{
+        color: rgb(255, 235, 10);
+      }
+      .text-gray{
+        color: rgb(204, 202, 202);
+
+      }
+      #element{
+        color: rgb(255, 235, 10);
+
+      }
+
+      .secondSection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1{
+        font-size: 1.9rem;
+      }
+      .secondSection .box{
+        background: white;
+        width: 70vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+
+      }
+      .secondSection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 90px;
+      }
+      .image-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -5px;
+      }
+
+      .vertical-title{
+       position: relative;
+       top: 75px;
+       width: 150px;
+       font-size: 15px;
+
+      }
+      .vertical-desc{
+        position: relative;
+        top: 85px;
+        color: antiquewhite;
+        font-size: 10px;
+        width: 150px;
+      }
+      footer{
+        background-color: rgb(31, 31, 50);
+        
+      }
+      .footer{
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul{
+        list-style: none;
+      }
+      .footer > div{
+        width: 220px;
+      }
+      footer .footer-rights{
+        text-align: center;
+        color: rgb(177, 177, 176);
+        padding: 12px 0px;
+
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <nav>
+        <div class="left">Mansa's Portfolio</div>
+        <div class="right">
+            <ul>
+              <li><a href="index.html"  rel="noopener noreferrer"> Home</a></li>
+               <li><a href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
+               <li><a href="/" target="_blank" rel="noopener noreferrer">Services</a></li>
+               <li><a href="/" target="_blank" rel="noopener noreferrer">Projects</a></li>
+               <li><a href="/" target="_blank" rel="noopener noreferrer">Contact Me</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+          <div class="leftSection">Hi, My name is<span class="purple"> Mansa</span><div>I am a  <div>
+            <span id="element"></span>
+            <div class="buttons">
+              <a href="gupta_mansa_resume.pdf" target="_blank">
+                <button class="btn">Download Resume</button>
+              </a>
+              <button class="btn">Github</button>
+            </div>
+          </div></div>
+        </div>
+          <div class="rightSection"><img src="developer.png" alt=""></div>
+        </section>
+        <hr>
+        <section class="secondSection">
+          <span class="text-gray">What I have done so far</span>
+          <h1>Work Experience</h1>
+          <div class="box">
+           <div class="vertical">
+            <img class="image-top" src="developer.webp" alt="">
+            <div class="vertical-title">
+              HTML developer(2010-2012)
+            </div>
+            <div class="vertical-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam assumenda ad debitis animi, nesciunt error velit distinctio iste expedita voluptatibus?
+
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="developer.webp" alt="">
+            <div class="vertical-title">
+              HTML developer(2010-2012)
+            </div>
+            <div class="vertical-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam assumenda ad debitis animi, nesciunt error velit distinctio iste expedita voluptatibus?
+
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="developer.webp" alt="">
+            <div class="vertical-title">
+              HTML developer(2010-2012)
+            </div>
+            <div class="vertical-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam assumenda ad debitis animi, nesciunt error velit distinctio iste expedita voluptatibus?
+
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="developer.webp" alt="">
+            <div class="vertical-title">
+              HTML developer(2010-2012)
+            </div>
+            <div class="vertical-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam assumenda ad debitis animi, nesciunt error velit distinctio iste expedita voluptatibus?
+
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="developer.webp" alt="">
+            <div class="vertical-title">
+              HTML developer(2010-2012)
+            </div>
+            <div class="vertical-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam assumenda ad debitis animi, nesciunt error velit distinctio iste expedita voluptatibus?
+
+            </div>
+          </div>
+            
+          </div>
+        </section>
+        </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Mansa's developer portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>LinkedIn</li>
+          </ul>
+
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169 www.mansaportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', '&amp; Software Developer'],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
