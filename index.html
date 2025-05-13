@@ -242,11 +242,55 @@
 }
 
 .vertical-desc {
-  margin-top: 23px;
+  margin-top: 19px;
   font-size: 0.9rem;
   color: #ddd;
   line-height: 1.4;
 }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leftSection, .rightSection {
+    flex: 1 1 100%;
+    margin: 0 auto;
+  }
+
+  .leftSection {
+    font-size: 2rem;
+  }
+
+  .rightSection img {
+    max-width: 80%;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-card {
+    max-width: 90%;
+  }
+}
+
 
   </style>
 </head>
@@ -327,7 +371,7 @@
     <div class="footer">
       <div>
         <h3>Mansa Gupta</h3>
-        <p>Web Developer | Software Developer | AI Enthusiast</p>
+        <p>Web Developer | Software Developer | AI Enthusiast | Data Science </p>
         <div class="footer-icons">
           <a href="https://linkedin.com/in/mansa-gupta" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/MansaGupta11" target="_blank"><i class="fab fa-github"></i></a>
