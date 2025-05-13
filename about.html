@@ -3,153 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - Mansa Gupta</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet"/>
+  <title>About Mansa Gupta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
     }
     body {
-      background-color: rgb(50, 50, 255);
+      background-color: #000941;
       color: white;
+      line-height: 1.6;
     }
-    nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 90px;
-      background-color: rgb(3, 3, 185);
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #0303b9;
     }
-    nav ul {
-      display: flex;
-      justify-content: center;
+    header h1 {
+      font-size: 2rem;
+      color: #ffeb0a;
     }
-    nav ul li {
-      list-style: none;
-      margin: 0 23px;
+    header nav {
+      margin-top: 10px;
     }
-    nav ul li a {
+    header nav a {
+      color: #87cefa;
+      margin: 0 10px;
       text-decoration: none;
-      color: white;
     }
-    nav ul li a:hover {
-      color: rgb(213, 180, 243);
-      font-size: 1.05rem;
-    }
-    .left {
-      font-size: 1.5rem;
-    }
-    .about-section {
-      padding: 50px 80px;
+    .container {
       max-width: 900px;
       margin: auto;
+      padding: 40px 20px;
     }
-    .about-section h1 {
-      font-size: 2.5rem;
-      color: rgb(255, 235, 10);
-      margin-bottom: 20px;
+    .profile-img {
+      width: 30vw;
+      max-width: 200px;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffeb0a;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      display: block;
+      margin: 0 auto;
     }
-    .about-section p {
-      font-size: 1.2rem;
-      line-height: 1.8;
-      color: rgb(238, 238, 238);
+    .section-title {
+      color: #ffeb0a;
+      margin: 30px 0 10px;
+      font-size: 1.5rem;
     }
     .highlight {
-      color: rgb(255, 235, 10);
-      font-weight: bold;
+      color: #ffeb0a;
     }
-    footer {
-      background-color: rgb(31, 31, 50);
-      margin-top: 60px;
+    ul {
+      padding-left: 20px;
     }
-    .footer {
-      display: flex;
-      padding: 23px 122px;
-      justify-content: space-evenly;
-    }
-    .footer ul {
-      list-style: none;
-    }
-    .footer > div {
-      width: 220px;
-    }
-    footer .footer-rights {
-      text-align: center;
-      color: rgb(177, 177, 176);
-      padding: 12px 0px;
+    a {
+      color: #87cefa;
     }
   </style>
 </head>
 <body>
   <header>
+    <h1>About Me</h1>
     <nav>
-      <div class="left">Mansa's Portfolio</div>
-      <div class="right">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact Me</a></li>
-        </ul>
-      </div>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Projects</a>
+      <a href="achievements.html">Contact</a>
+      <a href="projects.html">Blog</a>
     </nav>
   </header>
 
-  <main>
-    <section class="about-section">
-      <h1>About Me</h1>
-      <p>
-        Hello! I'm <span class="highlight">Mansa Gupta</span>, a passionate and driven web developer and software engineer. I specialize in creating beautiful, responsive websites and robust applications. Currently, I'm pursuing my degree in <span class="highlight">Information Technology</span> and actively building real-world projects to sharpen my development skills.
-      </p>
-      <br/>
-      <p>
-        I have experience with <span class="highlight">HTML, CSS, JavaScript, React</span>, and backend technologies like <span class="highlight">Node.js</span>. I'm also learning AI/ML tools and frameworks to integrate intelligence into my work. My goal is to make a meaningful impact through technology and innovation.
-      </p>
-      <br/>
-      <p>
-        Outside of coding, I love exploring new tech trends, writing technical blogs, and contributing to open-source communities.
-      </p>
-    </section>
-  </main>
+  <div class="container">
+    <img class="profile-img" src="mansaProfile.jpg" alt="Profile Image" />
 
-  <footer>
-    <div class="footer">
-      <div class="footer-first">
-        <h3>Mansa's developer portfolio</h3>
-      </div>
-      <div class="footer-second">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>LinkedIn</li>
-        </ul>
-      </div>
-      <div class="footer-third">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>LinkedIn</li>
-        </ul>
-      </div>
-      <div class="footer-fourth">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>LinkedIn</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-rights">
-      Copyright &#169; www.mansaportfolio.com | All rights reserved
-    </div>
-  </footer>
+    <p>Hello! I'm <strong class="highlight">Mansa Gupta</strong>, a passionate <strong>Software Developer</strong> pursuing a Bachelor of Technology in Information Technology. I'm driven by curiosity and creativity in the fields of <strong>Web Development</strong> and <strong>Data Science</strong>.</p>
+
+    <p>I believe in <strong>efficient work, adaptability</strong>, and continuous learning. Whether it's frontend finesse or backend logic, I enjoy building useful, scalable tech solutions.</p>
+
+    <div class="section-title">Skills & Tools</div>
+    <ul>
+      <li>C++, Python, MySQL</li>
+      <li>HTML, CSS, JavaScript, Web Development</li>
+      <li>Data Structures, DBMS, Cloud Computing (AWS)</li>
+      <li>Machine Learning Fundamentals</li>
+      <li>Soft Skills: Teamwork, Leadership, Communication</li>
+    </ul>
+
+    <div class="section-title">Achievements</div>
+    <ul>
+      <li>Training & Placement Cell Coordinator (Institute Level)</li>
+      <li>Core Team Member - ISTE National Chapter</li>
+      <li>NPTEL Certifications in AI</li>
+      <li>Finalist - Codefiesta (IEEE)</li>
+      <li>Distributed Systems Summer Internship (2023)</li>
+      <li>Outcome-Based Education (OBE) Coordinator</li>
+    </ul>
+
+    <div class="section-title">Education</div>
+    <p><strong>Madhav Institute of Technology & Science, Gwalior</strong><br/>
+    B.Tech in Information Technology<br/>
+    Current CGPA: <strong>9.0</strong></p>
+
+    <div class="section-title">Connect with Me</div>
+    <ul>
+      <li>Email: <a href="mailto:mansagupta2004@gmail.com">mansagupta2004@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/mansa-gupta" target="_blank">linkedin.com/in/mansa-gupta</a></li>
+      <li>GitHub: <a href="https://github.com/MansaGupta11" target="_blank">github.com/MansaGupta11</a></li>
+    </ul>
+  </div>
 </body>
 </html>
