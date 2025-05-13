@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mansa Gupta - Portfolio</title>
+  <title>mansa_gupta-dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
@@ -12,18 +12,19 @@
       padding: 0;
       font-family: 'Poppins', sans-serif;
       box-sizing: border-box;
-      scroll-behavior: smooth;
     }
     body {
-      background-color: #000941;
+      background: url('https://source.unsplash.com/1600x900/?nature,technology') no-repeat center center fixed;
+      background-size: cover;
       color: white;
+      font-size: 1rem;
     }
     nav {
       display: flex;
       justify-content: space-around;
       align-items: center;
       height: 90px;
-      background-color: #0303b9;
+      background-color: rgba(3, 3, 185, 0.8);
     }
     nav ul {
       display: flex;
@@ -45,104 +46,49 @@
       font-size: 1.5rem;
       font-weight: bold;
     }
-    .firstSection {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 70px 20px;
-      flex-wrap: wrap;
-    }
-    .firstSection > div {
-      flex: 1;
-      min-width: 300px;
-      margin: 20px;
-    }
-    .leftSection {
-      font-size: 2.5rem;
-      line-height: 1.5;
-      font-size: clamp(1.5rem, 5vw, 2.5rem);
-    }
-    .leftSection span.purple {
-      color: #ffeb0a;
-    }
-    .leftSection .buttons {
-      margin-top: 30px;
-    }
-    .btn {
-      padding: 12px 20px;
-      background: #1e00ff;
-      color: white;
-      border: 2px solid white;
-      font-size: 1rem;
-      margin-right: 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #ffeb0a;
-      color: black;
-      border-color: #ffeb0a;
-    }
-    .rightSection img {
-      width: 100%;
-      max-width: 400px;
-    }
-    #element {
-      color: #ffeb0a;
-    }
-    main hr {
-      border: none;
-      background: #3c00ff;
-      height: 2px;
-      margin: 40px 80px;
-    }
-    .secondSection {
+    .main-section {
+      padding: 60px 20px;
       max-width: 90vw;
       margin: auto;
-      padding: 50px 20px;
+      text-align: center;
     }
-    .secondSection h1 {
-      font-size: 1.8rem;
+    .main-section h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 2rem;
+      color: #2a00fd;
+      margin-bottom: 40px;
+    }
+    .portfolio {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 10px;
+      margin-top: 20px;
+      position: relative;
+    }
+    .portfolio h2 {
+      font-size: 2rem;
       margin-bottom: 20px;
       color: #ffeb0a;
     }
-    .secondSection .box {
-      background: white;
-      height: 2px;
+    .images-container {
       display: flex;
-      margin: 56px 0;
       justify-content: space-between;
-      position: relative;
+      gap: 10px;
+      flex-wrap: wrap;
     }
-    .secondSection .vertical {
-      width: 1px;
-      height: 100px;
-      background-color: white;
-      position: relative;
+    .image-item {
+      width: 100%;
+      max-width: 45%;
+      transition: transform 0.3s ease-in-out;
     }
-    .image-top {
-      width: 30px;
-      position: absolute;
-      top: -35px;
-      left: -14px;
+    .image-item img {
+      width: 50%;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
-    .vertical-title {
-      position: absolute;
-      top: 75px;
-      width: 250px;
-      font-size: 14px;
-      font-weight: bold;
+    .image-item:hover {
+      transform: scale(1.05);
     }
-    .vertical-desc {
-      position: absolute;
-      top: 100px;
-      width: 250px;
-      font-size: 12px;
-      color: antiquewhite;
-    }
-
-    /* FOOTER */
     footer {
       background-color: #1f1f32;
       padding-top: 30px;
@@ -194,118 +140,17 @@
       background-color: #151528;
       color: #b1b1b0;
     }
-    .secondSection {
-  max-width: 90vw;
-  margin: auto;
-  padding: 60px 20px;
-  min-height: 100vh;
-}
-
-.secondSection h1 {
-  font-size: 2rem;
-  text-align: center;
-  color: #ffeb0a;
-  margin-bottom: 40px;
-}
-
-.box {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-around;
-}
-
-.experience-card {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid #ffeb0a;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 300px;
-  position: relative;
-  flex: 1 1 250px;
-  min-height: 220px;
-}
-
-.image-top {
-  width: 30px;
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  background: white;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.vertical-title {
-  font-weight: bold;
-  margin-top: 10px;
-  color: #ffeb0a;
-  font-size: 1rem;
-}
-
-.vertical-desc {
-  margin-top: 19px;
-  font-size: 0.9rem;
-  color: #ddd;
-  line-height: 1.4;
-}
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 20px 0;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .firstSection {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .leftSection, .rightSection {
-    flex: 1 1 100%;
-    margin: 0 auto;
-  }
-
-  .leftSection {
-    font-size: 2rem;
-  }
-
-  .rightSection img {
-    max-width: 80%;
-  }
-
-  .box {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .experience-card {
-    max-width: 90%;
-  }
-}
-  .highlight-blink {
-    animation: blink-highlight 1s ease-in;
-    background-color: rgba(228, 228, 181, 0.519);
-  }
-
-  @keyframes blink-highlight {
-    0% { background-color:  rgba(228, 228, 181, 0.519); }
-    50% { background-color: transparent; }
-    100% { background-color:  rgba(228, 228, 181, 0.519); }
-  }
-
-
-
-
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .images-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-item {
+        max-width: 90%;
+        margin-bottom: 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -314,80 +159,39 @@
       <div class="left">Mansa's Portfolio</div>
       <div class="right">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" target="_blank">About</a></li>
-          <li><a href="projects.html" target="_blank">Projects</a></li>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="projects.html" >Projects</a></li>
           <li><a href="index.html#contact">Contact</a></li>
-          <li><a href="blog.html" target="_blank">Blog</a></li>
+          <li><a href="blog.html" >Blog</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="firstSection">
-      <div class="leftSection">
-        Hi, I'm <span class="purple">Mansa Gupta</span>.<br />
-        I am a <span id="element"></span>
-        <div class="buttons">
-          <a href="gupta_mansa_resume.pdf" target="_blank">
-            <button class="btn">Download Resume</button>
-          </a>
-          <a href="https://github.com/MansaGupta11" target="_blank">
-            <button class="btn">GitHub</button>
-          </a>
+    <section class="main-section">
+      <h1>Visit My Portfolio</h1>
+
+      <div class="portfolio">
+        <h2>Explore My Work and Projects</h2>
+        <div class="images-container">
+          <div class="image-item">
+            <img src="female.avif" alt="Web Development">
+          </div>
+          <div class="image-item">
+            <img src="analyst.avif" alt="Technology">
+          </div>
         </div>
-      </div>
-      <div class="rightSection">
-        <img src="developer.png" alt="Developer illustration">
       </div>
     </section>
-
-    <hr />
-
-    <section class="secondSection">
-        <h1>Experience & Roles</h1>
-        <div class="box">
-          <div class="experience-card">
-            <img class="image-top" src="developer.webp" alt="DS">
-            <div class="vertical-title">Data Analyst - Intern Project</div>
-            <div class="vertical-desc">
-              Worked on structured datasets to build insights & dashboards. Performed data cleaning, exploratory analysis using Python, Pandas, and Seaborn.
-            </div>
-          </div>
-          <div class="experience-card">
-            <img class="image-top" src="developer.webp" alt="AI">
-            <div class="vertical-title">AI SaaS Project - IdeaScriptAI</div>
-            <div class="vertical-desc">
-              Built an AI-powered content automation platform integrating Gemini-1.5 Flash model. Included MongoDB, TypeScript, and custom UI templates.
-            </div>
-          </div>
-          <div class="experience-card">
-            <img class="image-top" src="developer.webp" alt="web">
-            <div class="vertical-title">Web Developer</div>
-            <div class="vertical-desc">
-              Designed and developed dynamic websites using HTML, CSS, JavaScript and Next.js. Created UI components with Tailwind CSS.
-            </div>
-          </div>
-          <div class="experience-card">
-            <img class="image-top" src="developer.webp" alt="system">
-            <div class="vertical-title">Intern - Distributed Systems</div>
-            <div class="vertical-desc">
-              Internship in distributed system design, focusing on real-time processing, architecture patterns, and failover mechanisms.
-            </div>
-          </div>
-        </div>
-      </section>
-      
   </main>
 
-  <footer id="contact" style="text-align: justify; padding: 1rem;">
-    
-
+  <footer>
     <div class="footer">
       <div>
         <h3>Mansa Gupta</h3>
-        <p>Web Developer | Software Developer | AI Enthusiast | Data Science </p>
+        <p>Web Developer | Software Developer | AI Enthusiast</p>
         <div class="footer-icons">
           <a href="https://linkedin.com/in/mansa-gupta" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/MansaGupta11" target="_blank"><i class="fab fa-github"></i></a>
@@ -397,9 +201,10 @@
       <div>
         <h3>Explore</h3>
         <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
@@ -414,26 +219,5 @@
       © 2025 www.mansaportfolio.com | All rights reserved
     </div>
   </footer>
-
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Software Developer', 'AI Explorer', 'Data Science'],
-      typeSpeed: 60,
-      loop: true,
-    });
-  </script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      if (window.location.hash === '#contact') {
-        const footer = document.getElementById('contact');
-        footer.scrollIntoView({ behavior: 'smooth' });
-  
-        footer.classList.add('highlight-blink');
-        setTimeout(() => footer.classList.remove('highlight-blink'), 1500);
-      }
-    });
-  </script>
-  
 </body>
-</html> 
+</html>
