@@ -45,6 +45,50 @@
       font-size: 1.5rem;
       font-weight: bold;
     }
+    /* Base nav styling */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Hamburger style - hidden by default on large screens */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive nav for small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #000;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    gap: 10px;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
     .firstSection {
       display: flex;
       justify-content: space-around;
@@ -311,8 +355,14 @@
 <body>
   <header>
     <nav>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    &#9776; <!-- This is the ☰ symbol -->
+  </div>
+
       <div class="left">Mansa's Portfolio</div>
-      <div class="right">
+      <div class="nav-links">
         <ul>
           <li><a href="home.html">Home</a></li>
           <li><a href="about.html" target="_blank">About</a></li>
@@ -434,6 +484,15 @@
       }
     });
   </script>
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
   
 </body>
 </html> 
