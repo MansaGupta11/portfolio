@@ -70,7 +70,7 @@
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #000;
+    background-color: #0303b9;
     flex-direction: column;
     width: 100%;
     display: none;
@@ -78,6 +78,9 @@
     padding: 10px 0;
     z-index: 1000;
   }
+  .nav-links {
+  display: none;  /* hidden by default */
+}
 
   .nav-links.show {
     display: flex;
@@ -484,9 +487,10 @@
       }
     });
   </script>
-  <script>
+
+<script>
   const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
+  const navLinks = document.querySelector('.nav-links');
 
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
