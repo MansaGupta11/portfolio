@@ -19,12 +19,14 @@
       color: white;
     }
     nav {
-      position:relative;
       display: flex;
       justify-content: space-around;
       align-items: center;
       height: 90px;
       background-color: #0303b9;
+      min-width: 100vw; /* ensures navbar covers the full width even on scroll */
+      overflow-x: auto;  /* allows scrolling if nav content overflows */
+      white-space: nowrap
     }
     nav ul {
       display: flex;

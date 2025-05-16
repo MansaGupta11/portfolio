@@ -23,6 +23,10 @@
       align-items: center;
       height: 90px;
       background-color: #0303b9;
+      min-width: 100vw; /* ensures navbar covers the full width even on scroll */
+      overflow-x: auto;  /* allows scrolling if nav content overflows */
+      white-space: nowrap; /* keeps the nav items in one line */
+
     }
     nav ul {
       display: flex;

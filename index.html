@@ -25,6 +25,9 @@
       align-items: center;
       height: 90px;
       background-color: rgba(3, 3, 185, 0.8);
+      min-width: 100vw; /* ensures navbar covers the full width even on scroll */
+      overflow-x: auto;  /* allows scrolling if nav content overflows */
+      white-space: nowrap
     }
     nav ul {
       display: flex;
@@ -159,16 +162,7 @@
 <body>
   <header>
     <nav>
-      <div class="left">Mansa's Portfolio</div>
-      <div class="right">
-        <ul>
-          <li><a href="home.html" >Home</a></li>
-          <li><a href="about.html" >About</a></li>
-          <li><a href="projects.html" >Projects</a></li>
-          <li><a href="home.html#contact">Contact</a></li>
-          <li><a href="blog.html" >Blog</a></li>
-        </ul>
-      </div>
+  <div class="left">Mansa's Portfolio</div>
     </nav>
   </header>
 
@@ -222,5 +216,14 @@
       © 2025 www.mansaportfolio.com | All rights reserved
     </div>
   </footer>
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>
